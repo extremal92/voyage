@@ -1,0 +1,20 @@
+{
+  "name": "transport",
+  "version": "1.0.0",
+  "description": "",
+  "author": "Roman Romanov",
+  "license": "ISC",
+  "dependencies": {
+    "browser-sync": "^2.18.13",
+    "gulp": "^3.9.1",
+    "gulp-imagemin": "^4.0.0",
+    "gulp-notify": "^3.0.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-pug": "^3.3.0",
+    "gulp-sourcemaps": "^2.6.1",
+    "gulp-spritesmith": "0.0.2",
+    "gulp-stylus": "^2.6.0",
+    "gulp.spritesmith": "^6.7.0",
+    "nib": "^1.1.2"
+  }
+}
