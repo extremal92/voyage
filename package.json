@@ -6,13 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://eXtReMaL1992@bitbucket.org/eXtReMaL1992/transportations.git"
-  },
   "author": "RomanRomanov",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/eXtReMaL1992/transportations#readme",
   "dependencies": {
     "beepbeep": "1.2.0",
     "browser-sync": "2.17.5",
