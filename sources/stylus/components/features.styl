@@ -1,0 +1,129 @@
+.features
+  height 100px
+  background-color: $feature_bg
+  overflow hidden
+  +below(991px)
+    height auto
+  &_main
+    display: flex
+    width: 100%
+    +below(991px)
+      flex-wrap: wrap
+    &_title
+      width: 165px
+      display: flex
+      flex-wrap: wrap
+      position relative
+      +below(991px)
+        width 100%
+      p
+        width: 100%;
+        margin: 0;
+        height: 50px;
+        text-transform: uppercase
+        &.light
+          align-items: flex-end;
+          display: flex;
+          font-size: 16px;
+          color: #9fb0c0
+          +below(991px)
+            justify-content: flex-end
+            padding-right: 5px
+        &.bold
+          align-items: flex-start;
+          display: flex;
+          font-weight: bold
+          color: $site_white
+          font-size: 22px;
+          +below(991px)
+            justify-content: flex-start
+            padding-left: 5px
+        +below(991px)
+          width 50%!important
+          align-items: center!important
+          font-weight: bold!important
+          color: $site_white!important
+          font-size: 22px!important
+      img
+        position absolute
+        top 0
+        right 10px
+        height 100px
+        +below(991px)
+          display: none
+    &_form
+      width: calc(100% - 165px)
+      height 100px
+      display: flex
+      align-items: center
+      +below(991px)
+        margin: 5px auto 15px auto
+        height auto
+        width 100%
+      form
+        width: 100%
+        display: flex
+        justify-content: space-around
+        +below(991px)
+          flex-wrap: wrap
+        .features_main_form_btn
+          +below(991px)
+            width 100%
+            text-align: center
+        label
+          display: flex
+          align-items: center
+          margin: 0
+          position relative
+          +below(991px)
+            margin-bottom: 15px 
+          +below(767px)
+            width: 310px
+            flex-wrap: wrap
+            justify-content: center
+          span
+            font-size: 22px
+            font-weight: 300
+            color: #9fb0c0
+            +below(767px)
+              width 100%
+              text-align: center
+          input
+            width 325px
+            height 45px
+            border: 1px solid $site_black
+            margin-left: 20px
+            box-sizing: border-box
+            padding-left: 12px
+            color: #8a8a8a
+            font-size: 20px
+            position relative
+            +below(1200px)
+              width 225px
+            +below(767px)
+              margin-left: 0px
+          // .features_main_form_input_from
+          //   &::before
+          //     font-family: FontAwesome
+          //     display: inline-block
+          //     content: "\f0ac";
+          //     position absolute
+          //     font-size: 22px
+          //     color #a4a4a4
+          i
+            position: absolute
+            right: 15px
+            font-size: 22px
+            color #a4a4a4
+            +below(767px)
+              bottom 12px
+              right: 55px
+        button
+          width: 108px
+          height 45px
+          background-color: $color_text_hover
+          color: $site_white
+          font-size: 20px
+          text-align: center
+          +below(991px)
+            width 220px

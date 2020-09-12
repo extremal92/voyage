@@ -1,0 +1,92 @@
+.footer
+  background-color: $footer_bg
+  padding: 63px 0 59px 0
+  &_main
+    &_item
+      max-width 247px
+      +below(767px)
+        margin: 0 auto 30px auto
+      &_title
+        color: $color_text_hover
+        font-weight: bold
+        font-size: 25px
+        margin-bottom: 10px
+      &_contact
+        .contact-text
+          color: $site_white
+          font-size: 13px
+          a
+            text-decoration: none
+            color: $site_white
+            span
+              &:first-child
+                color: $color_text_hover
+        .contact-links
+          margin-top: 20px;
+          display: flex;
+          justify-content: space-between;
+          max-width: 170px;
+          font-size: 24px;
+          a
+            text-decoration: none
+            color: $site_white
+            transition ease-in-out .4s
+            &:hover
+              color $color_text_hover
+      &_tags
+        .tags-list
+          display: flex;
+          width: 100%;
+          flex-wrap: wrap;
+          color: $site_white;
+          font-size: 13px;
+          .tags-list-item
+            padding: 8px
+            border: 1px solid $site_white
+            margin: 2.5px
+      &_news
+        .news-item
+          width 100%
+          margin-bottom: 29px
+          display: flex
+          &-image
+            width: 36px
+            height 36px
+            border: 1px solid $site_white
+            padding: 5px
+            display: flex
+            justify-content: center
+            align-items: center
+          &-text
+            width: calc(100% - 59px);
+            padding-left: 13px;
+            &-title
+              color: $site_white
+              font-size: 14px
+            &-date
+              font-size: 13px
+              font-weight: 300
+              color: $color_text_hover
+      &_subscribe
+        .subscribe-text
+          font-size: 13px
+          color: $site_white
+          margin-bottom: 20px
+        .subscribe-form
+          form
+            display: flex
+            input,
+            button
+              height 31px;
+            input
+              max-width 147px;
+              width 100%
+              font-size: 13px
+            button 
+              width: 47px
+              margin-left: 6px;
+              color: $site_white
+              background: $color_text_hover
+              font-size: 15px
+              text-transform: uppercase
+              text-align: center

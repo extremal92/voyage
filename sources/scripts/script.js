@@ -1,22 +1,26 @@
-// var user = {
-//     name: "Frank",
-//     id: 13232,
-//     lastVisit: Date.now(),
-//     friends: [2424, 5252, 4512],
-//     toJSON: function () {
-//         return{
-//             name: this.name,
-//             lastVisit: this.lastVisit,
-//         }
-//     }
-// };
-//
-// var userData = JSON.stringify(user);
-// console.log(userData);
-//
-// console.log(JSON.parse(userData));
-
-
-// var date = new Date();
-// var date = new Date(1992, 8, 6, 04, 20, 00);
-// console.log(date);
+$('.burger_nav').on("click", function(e) {
+  e.preventDefault(),
+  $(".burger_nav").toggleClass("open"),
+  $(".header").toggleClass("open"),
+  $(".mobile_nav").toggleClass("d-none")
+})
+// Banner
+$('#slick_banner').slick({
+  autoplay: false,
+  dots: true,
+  infinite: true,
+  speed: 1000,
+  accessibility: false,
+  prevArrow: '<button class="slick-prev"><i class="fa fa-angle-left" aria-hidden="true"></i></button>',
+  nextArrow: '<button class="slick-next"><i class="fa fa-angle-right" aria-hidden="true"></i></button>',
+  fade: true,
+  cssEase: 'linear',
+  lazyLoad: 'ondemand',
+  responsive: [{
+    breakpoint: 991,
+    settings: {
+      arrows: true,
+      dots: true
+    }
+  }]
+});
